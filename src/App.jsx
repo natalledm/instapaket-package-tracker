@@ -1,23 +1,14 @@
-import { useEffect, useState } from "react";
+import Parcel from "./components/Parcel";
+import FetchData from "./scripts/FetchData";
 
 export default function App() {
+  const retrievedData = FetchData();
 
-  const [task, setTask] = useState({});
+  // console.log(JSON.stringify(data, null, 6));
 
-  useEffect(() => {
-    fetch('https://my.api.mockaroo.com/insta-orders.json?key=e49e6840')
-      .then(response => response.json())
-      .then(json => {
-        console.log(json);
-        setTask(json);
-      });
-  }, []);
+  const parcel = retrievedData.map((item, index) => (
+    <Parcel item={item} key={index} />
+  ));
 
-  const file = JSON.stringify(task, null, 4)
-  console.log(file)
-
-  return (
-    <div className="App">
-    </div>
-  );
-};
+  return <div className="App">{parcel}</div>;
+}
