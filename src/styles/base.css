@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display&family=Red+Hat+Mono&display=swap");
+
+:root {
+  --green-white: #f1faee;
+  --blue-teal: #a8dadc;
+  --night-blue: #1d3557;
+  --accent-red: #e63946;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: var(--green-white);
+  box-sizing: border-box;
+  min-height: 100%;
+}
+
+img {
+  object-fit: cover;
+}
+
+/* Typography */
+
+h1,
+h2,
+h3 {
+  font-family: "Red Hat Mono", monospace;
+}
+
+h1 {
+  font-size: 3.4rem;
+}
+
+h2 {
+  font-size: 2.2rem;
+}
+
+h3 {
+  font-size: 1.8rem;
+}
+
+p {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 1.7rem;
+}
+
+/* General layout organization */
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 600px) {
+  h1 {
+    font-size: 5rem;
+  }
+
+  h2 {
+    font-size: 4.2rem;
+  }
+
+  h3 {
+    font-size: 2.4rem;
+  }
+
+  p {
+    font-size: 1.8rem;
+  }
+}

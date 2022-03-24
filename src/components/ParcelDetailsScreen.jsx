@@ -1,4 +1,4 @@
-export default function Parcel(props) {
+export default function ParcelDetailsScreen(props) {
   const item = props.item;
 
   const { id, eta, last_updated, user_name, location_name } = item;

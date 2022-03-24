@@ -21,15 +21,15 @@ A [spreadsheet](https://docs.google.com/spreadsheets/d/16cbZsLO3w64g3ALR0dKWReea
 
 ### Component tree
 
-This is [the component tree](https://google.com) of this project made on Whimsical.
+This is [the component tree](https://whimsical.com/instapaket-packet-tracker-Ujgpt4hkSxVL6LShLSdLwp@2Ux7TurymMpdwV9dTytZ) of this project made on Whimsical.
 
 ### User Flow
 
-This is [the user flow](https://google.com) of this project made on Whimsical.
+This is [the user flow](https://whimsical.com/instapaket-packet-tracker-Ujgpt4hkSxVL6LShLSdLwp@2Ux7TurymMpdwV9dTytZ) of this project made on Whimsical.
 
 ### Figma design
 
-There's also a [figma design](https://google.com).
+There's also a [figma design](https://www.figma.com/file/lfoWXD5TNdGvB7anVnDV2i/Nat's-Package-Delivery?node-id=20%3A302).
 
 ---
 
@@ -42,11 +42,12 @@ There's also a [figma design](https://google.com).
 3. CSS
 4. JSON
 5. Asynchronous JS
+6. API request
 
 ### Assets
 
 1. Fonts from Google Fonts
-2. Images from Unsplash
+2. Images from Ghibli's movie Kiki's delivery service
 
 ---
 
