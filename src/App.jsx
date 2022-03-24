@@ -16,10 +16,12 @@ export default function App() {
     <div className="flex-column">
       <Navbar />
       <main className="intro-screen-container">
-        <img src={seal} alt="Kiki's logo" />
-        <h1>Kiki’s Instapaket tracker</h1>
-        <h3>Find your parcel with our help</h3>
-        <Link to="/parcels">Where is my parcel?</Link>
+        <img src={seal} alt="Kiki's logo" className="intro-logo" />
+        <h1 className="intro-title">Kiki’s Instapaket tracker</h1>
+        <h3 className="intro-subtitle">Find your parcel with our help</h3>
+        <Link to="/parcels" className="intro-link-button">
+          Where is my parcel?
+        </Link>
       </main>
       <Footer />
     </div>
