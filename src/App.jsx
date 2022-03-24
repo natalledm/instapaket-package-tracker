@@ -9,7 +9,7 @@ import Footer from "./components/layout/Footer";
 // assets & styles
 import seal from "./assets/kiki-seal-300.png";
 import "./styles/base.css";
-import "./styles/intro-screen.css";
+import "./styles/screens/intro-screen.css";
 
 export default function App() {
   return (
