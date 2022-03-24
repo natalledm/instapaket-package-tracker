@@ -1,18 +1,19 @@
+import { Link } from "react-router-dom";
+
 export default function ParcelCard(props) {
+  const forwardIcon = require("../assets/icons/arrow-right.png");
   const item = props.item;
 
-  const { id, eta, last_updated, user_name, location_name } = item;
+  const { parcel_id, sender, eta, status } = item;
 
   return (
-    <div>
+    <Link to={`/parcels/${parcel_id}`}>
       <div>
-        <h2>Pacote:</h2>
-        <p>{id}</p>
-        <p> {user_name}</p>
-        <p>{location_name}</p>
+        <h2>{sender}</h2>
+        <p>{status}</p>
         <p>{eta}</p>
-        <p>{last_updated}</p>
+        <img src={forwardIcon} alt="icon of an arrow to the right" />
       </div>
-    </div>
+    </Link>
   );
 }
