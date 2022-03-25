@@ -23,30 +23,26 @@ export default function ParcelInfo({ data }) {
   const notesContent = verifyNotes(notes);
 
   return (
-    <section>
-      <div>
-        <p>Parcel id</p>
+    <section className="parcel-info-container">
+      <div className="parcel-id-container">
+        <p className="info-title">Parcel id</p>
         <p>{parcel_id}</p>
       </div>
-      <div>
-        <p>Document verification</p>
-        {verification_required ? (
-          <span>Required</span>
-        ) : (
-          <span>Not required</span>
-        )}
+      <div className="doc-verify-container">
+        <p className="info-title">Document verification</p>
+        {verification_required ? <p>Required</p> : <p>Not required</p>}
       </div>
-      <div>
-        <p>Estimated date of delivery</p>
+      <div className="eta-container">
+        <p className="info-title">Estimated date of delivery</p>
         <p>{dateEta}</p>
       </div>
-      <div>
-        <p>Last update</p>
+      <div className="update-date-container">
+        <p className="info-title">Last update</p>
         <p>{dateUpdate}</p>
         <p>{timeUpdate}</p>
       </div>
-      <div>
-        <p>Notes</p>
+      <div className="notes-container">
+        <p className="info-title">Notes</p>
         <p>{notesContent}</p>
       </div>
     </section>
