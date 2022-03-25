@@ -16,19 +16,18 @@ export default function ParcelLocation({ data }) {
   const mapSrc = `https://www.openstreetmap.org/export/embed.html?bbox=${lonStart}%2C${latStart}%2C${lonEnd}%2C${latEnd}&layer=mapnik&marker=${location_coordinate_latitude}%2C${location_coordinate_longitude}`;
 
   return (
-    <section>
+    <section className="location-container">
       <div>
         <h3>Deliver to:</h3>
         <p>{location_name}</p>
       </div>
-      <div>
+      <div className="map-container">
         <iframe
           scrolling="no"
           className="map"
           src={mapSrc}
           title={`map-${id}`}
         ></iframe>
-        <br />
         <small>
           <a
             href="https://www.openstreetmap.org/#map=12/29.8335/108.7482"
