@@ -5,7 +5,7 @@ import {
   Route,
   Navigate,
 } from "react-router-dom";
-import App from "./App";
+import IntroScreen from "./components/screens/IntroScreen";
 import ParcelsScreen from "./components/screens/ParcelsScreen";
 import ParcelDetailsScreen from "./components/screens/ParcelDetailsScreen";
 import { ParcelsProvider } from "./components/state/ParcelsProvider";
@@ -15,7 +15,7 @@ render(
   <ParcelsProvider>
     <Router>
       <Routes>
-        <Route path="/" element={<App />} />
+        <Route path="/" element={<IntroScreen />} />
         <Route path="/*" element={<Navigate replace to="/" />} />
         <Route path="parcels" element={<ParcelsScreen />} />
         <Route path="parcels/:id" element={<ParcelDetailsScreen />} />
