@@ -1,0 +1,58 @@
+.parcel-info-container {
+  font-family: "Red Hat Display", sans-serif;
+  height: 100%;
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 5rem;
+  grid-template-areas:
+    "id doc"
+    "eta lastdate"
+    "notes notes";
+}
+
+.info-title {
+  font-family: "Red Hat Mono", monospace;
+  font-weight: 600;
+}
+
+.parcel-id-container {
+  grid-area: id;
+  align-self: start;
+  text-align: left;
+}
+
+.doc-verify-container {
+  grid-area: doc;
+  align-self: start;
+  text-align: right;
+}
+
+.eta-container {
+  grid-area: eta;
+  align-self: start;
+  text-align: left;
+}
+
+.update-date-container {
+  grid-area: lastdate;
+  align-self: start;
+  text-align: right;
+}
+
+.notes-container {
+  grid-area: notes;
+}
+
+@media (min-width: 600px) {
+  .parcel-info-container {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+      "id . doc"
+      "eta . lastdate"
+      "notes notes notes";
+  }
+}

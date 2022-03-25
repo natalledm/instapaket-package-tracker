@@ -1,0 +1,29 @@
+.intro-screen-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1080px;
+  height: 90vh;
+  text-align: center;
+  align-content: space-around;
+}
+
+.intro-logo {
+  padding-bottom: 4rem;
+}
+
+.intro-title {
+  padding-bottom: 2rem;
+}
+
+.intro-subtitle {
+  padding-bottom: 2rem;
+}
+
+.intro-link-button {
+  padding: 2rem;
+  text-decoration: none;
+  background-color: var(--night-blue);
+  color: var(--green-white);
+}
