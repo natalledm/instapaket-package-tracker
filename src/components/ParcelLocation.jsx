@@ -2,6 +2,7 @@ import "../styles/components/parcel-location.css";
 
 export default function ParcelLocation({ data }) {
   const {
+    id,
     location_name,
     location_coordinate_latitude,
     location_coordinate_longitude,
@@ -21,7 +22,12 @@ export default function ParcelLocation({ data }) {
         <p>{location_name}</p>
       </div>
       <div>
-        <iframe scrolling="no" className="map" src={mapSrc}></iframe>
+        <iframe
+          scrolling="no"
+          className="map"
+          src={mapSrc}
+          title={`map-${id}`}
+        ></iframe>
         <br />
         <small>
           <a

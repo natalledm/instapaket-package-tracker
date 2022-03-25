@@ -10,7 +10,8 @@ export default function ParcelCard(props) {
 
   const { parcel_id, sender, eta, status } = item;
 
-  const newETA = formatString(eta)[0];
+  const newETA = formatString(eta).date;
+
   return (
     <Link to={`/parcels/${parcel_id}`} state={props}>
       <div className="parcel-card-container">

@@ -5,16 +5,15 @@ import "../styles/components/parcel-info.css";
 export default function ParcelInfo({ data }) {
   const { parcel_id, verification_required, eta, last_updated, notes } = data;
 
-  const etaArray = formatString(eta);
-  const dateEta = etaArray[0];
+  const dateEta = formatString(eta).date;
 
-  const updateArray = formatString(last_updated);
-  const dateUpdate = updateArray[0];
-  const timeUpdate = updateArray[1];
+  const updateDateTime = formatString(last_updated);
+  const dateUpdate = updateDateTime.date;
+  const timeUpdate = updateDateTime.time;
 
   function verifyNotes(notes) {
     if (notes === null) {
-      return <p>None</p>;
+      return "None";
     } else {
       return notes;
     }
