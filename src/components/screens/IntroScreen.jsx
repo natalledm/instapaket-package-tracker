@@ -3,15 +3,15 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 // Components
-import Navbar from "./components/layout/Navbar";
-import Footer from "./components/layout/Footer";
+import Navbar from "../layout/Navbar";
+import Footer from "../layout/Footer";
 
 // assets & styles
-import seal from "./assets/kiki-seal-300.png";
-import "./styles/base.css";
-import "./styles/screens/intro-screen.css";
+import seal from "../../assets/kiki-seal-300.png";
+import "../../styles/base.css";
+import "../../styles/screens/intro-screen.css";
 
-export default function App() {
+export default function IntroScreen() {
   return (
     <div className="flex-column">
       <Navbar />
