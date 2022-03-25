@@ -27,7 +27,7 @@ export default function ParcelDetailsScreen() {
           <h3 className="parcel-status">{status}</h3>
           <div className="parcel-details-container">
             <ParcelInfo data={data} />
-            {/* <ParcelLocation data={data} /> */}
+            <ParcelLocation data={data} />
           </div>
           <button
             onClick={() => navigate(-1)}
