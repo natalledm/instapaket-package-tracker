@@ -6,8 +6,8 @@ import {
   Navigate,
 } from "react-router-dom";
 import App from "./App";
-import ParcelsScreen from "./components/ParcelsScreen";
-import ParcelDetailsScreen from "./components/ParcelDetailsScreen";
+import ParcelsScreen from "./components/screens/ParcelsScreen";
+import ParcelDetailsScreen from "./components/screens/ParcelDetailsScreen";
 
 const rootElement = document.getElementById("root");
 render(

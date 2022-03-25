@@ -12,7 +12,7 @@ export default function ParcelCard(props) {
 
   const newETA = formatString(eta)[0];
   return (
-    <Link to={`/parcels/${parcel_id}`}>
+    <Link to={`/parcels/${parcel_id}`} state={props}>
       <div className="parcel-card-container">
         <div className="parcel-card-info">
           <h3 className="parcel-card-sender">{sender}</h3>

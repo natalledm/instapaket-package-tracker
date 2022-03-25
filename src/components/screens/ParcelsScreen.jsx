@@ -1,12 +1,12 @@
 // Components
-import ParcelCard from "./ParcelCard";
-import Navbar from "./layout/Navbar";
-import Footer from "./layout/Footer";
+import ParcelCard from "../ParcelCard";
+import Navbar from "../layout/Navbar";
+import Footer from "../layout/Footer";
 
 // data
-import FetchData from "../scripts/FetchData";
+import FetchData from "../../scripts/FetchData";
 
-import "../styles/screens/parcels-screen.css";
+import "../../styles/screens/parcels-screen.css";
 
 export default function ParcelsScreen() {
   const retrievedData = FetchData();
