@@ -2,10 +2,10 @@
 
 Hello again!
 
-This is the InstaPaket - Tracker your package website made with React.
-It is a **mobile first page**, so please check it out first with your mobile or a mobile screen in your browser.
+This is the Kiki's InstaPaket Tracker, it helps you track the packages from our api.
+It is a **mobile first page**, so please check it out first with your mobile or a mobile screen option in your browser.
 
-You can visit the page [here](https://google.com) to see the fetched data with all your packages.
+You can visit the page [here](https://kiki-parcel-tracker.web.app/) to see the fetched data with all the parcels.
 
 ---
 
@@ -37,12 +37,13 @@ There's also a [figma design](https://www.figma.com/file/lfoWXD5TNdGvB7anVnDV2i/
 
 ### Tech
 
-1. React and ReactDOM
+1. React, ReactDOM and Router
 2. Firebase
 3. CSS
 4. JSON
 5. Asynchronous JS
 6. API request
+7. Context API
 
 ### Assets
 
