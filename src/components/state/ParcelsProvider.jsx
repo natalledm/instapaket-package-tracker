@@ -20,7 +20,7 @@ export function ParcelsProvider({ children }) {
         setParcels(parcels);
         setStatus({ error: false, errorMessage: "", loading: false });
       } catch (error) {
-        setStatus({ error: true, errorMessage: error, loading: false });
+        setStatus({ error: true, errorMessage: error.message, loading: false });
         setParcels(backup);
       }
     }

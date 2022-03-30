@@ -1,10 +1,14 @@
-export default function StatusError() {
+import "../styles/components/status-error.css";
+
+export default function StatusError(props) {
   return (
-    <div>
+    <div className="error-container">
+      <p>Ops! It seems that we couldn't find the page you requested.</p>
       <p>
-        Ops! It seems that we couldn't find the page you requested! Please
-        refresh the page! =)
+        The specific error was:
+        <span className="error-message"> {props.errorMessage}</span>
       </p>
+      <p>Please refresh the page or go back to the starting page! =)</p>
     </div>
   );
 }

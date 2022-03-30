@@ -17,6 +17,7 @@ export default class ParcelsScreen extends React.Component {
     const { parcels, loading, error, errorMessage } = this.context;
 
     if (loading === true) return <StatusLoading />;
+
     // create cards
     const card = parcels.map((item) => (
       <ParcelCard item={item} key={item.id} />
@@ -28,7 +29,7 @@ export default class ParcelsScreen extends React.Component {
         <section className="parcels-screen-container">
           <h1 className="parcels-title">My parcels</h1>
           <div className="parcels-cards-container">
-            {error ? <StatusError /> : card}
+            {error ? <StatusError errorMessage={errorMessage} /> : card}
           </div>
         </section>
         <Footer />
